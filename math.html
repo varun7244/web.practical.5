@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>String and Math Object</title>
+	<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+*, *:before, *:after {
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body {
+  padding:3em 1em;
+  font-family: 'Ubuntu Mono', sans-serif;
+  line-height:1.6em;
+  text-align: center;
+  color:white;
+  background:#121212;
+}
+em {font-style:normal;font-size:1.2em;}
+i {font-style:normal;color:#00ff77;}
+p {padding-bottom:1em;}
+hr {
+  position:relative;
+  padding:3rem 0;
+  border:none;
+}
+hr:before {
+  content:'\2044\2217\2013\2013\2013\2013\2013\2217\2044';
+  position:absolute;
+  top:1.2rem;
+  right:0;
+  left:0;
+  font-size:1.5em;
+  color:#FFFFFF;
+  text-align:center;
+}
+</style>
+  </head>
+  <body>
+    <div class="first">
+      <h1>JavaScript String and Math Object</h1>
+	  <br><br>
+      <p id="obj"></p>
+    </div>
+    <script>
+      var str = "Web  programming Practical No. 5";
+      document.getElementById("obj").innerHTML =
+     
+       
+        "</br>" +
+        "Math.abs(-4.7):" +
+        Math.abs(-4.7) +
+        "</br>" +
+        "Math.ceil(4.7):" +
+        Math.ceil(4.7) +
+        "</br>" +
+        "Math.floor(4.7):" +
+        Math.floor(4.7) +
+        "</br>" +
+        "IndexOf('p'):" +
+        str.indexOf("P") +
+        "</br>" +
+        "Length:" +
+        str.length +
+		   "Math.E:" +
+        Math.E +
+		 "</br>" +
+        "Math.PI:" +
+        Math.PI +
+		 "</br>" +
+        "Math.min (0,150,30,20,-8,-200)" +
+        Math.min(0, 150, 30, 20, -8, -200) +
+        "</br>" +
+		"String str = Web Programming Practical No. 5</br>" +
+        "Uppercase :" +
+        str.toUpperCase() +
+        "</br>" +
+        "Substring:" +
+        str.substr(1, 5);
+    </script>
+  </body>
+</html>

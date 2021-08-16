@@ -1,0 +1,35 @@
+
+<html>
+  <head>
+
+    <title>Window Object Method</title>
+    <script>
+      var myWindow;
+      function openWindow() {
+        myWindow = window.open("", "", "height=100,width=100");
+      }
+      function resizeWin() {
+        myWindow.resizeTo(500, 500);
+        myWindow.focus();
+      }
+      function moveBy() {
+        myWindow.moveTo(1000, 1000);
+      }
+      function winClose() {
+        if (confirm("Do you want to close the window ?")) myWindow.close();
+      }
+    </script>
+  </head>
+  <body bgcolor="ligh blue" text="white"><center>
+    <div class="first"><br><br><br>
+      <h1>JavaScript Window Object Methods</h1><br>
+      <button onclick="openWindow()">	
+        Create Window
+      </button>
+      <button onclick="resizeWin()">Resize Window</button>
+      <button onclick="moveBy()">Move</button>	
+      <button onclick="winClose()">Close</button>
+    </div>
+	</center>
+  </body>
+</html>

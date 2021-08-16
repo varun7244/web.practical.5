@@ -1,0 +1,29 @@
+
+<html>
+  <head>
+
+    <title>History</title>
+    <script type="text/javascript">
+      function lent() {
+        alert("Total number of URLs visited by browser:" + history.length);
+      }
+      function load_prev() {
+        window.history.back();
+      }
+      function load_next() {
+        window.history.forward();
+      }
+      function go_url() {
+        window.history.go(1);
+      }
+    </script>
+  </head>
+<body bgcolor="ligh blue" text="white"><center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <button onclick="load_prev()">Previous Page</button>
+    <button onclick="load_next()">Next Page</button>
+    <button onclick="go_url()">Visited Url</button>
+    <button onclick="lent()">Length of URLS</button>
+	</center>
+  </body>
+</html>
